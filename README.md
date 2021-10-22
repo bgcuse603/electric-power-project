@@ -35,7 +35,7 @@ https://whimsical.com/epp-component-hierarchy-LNYLrwjjxN726EEz9EBWPP
 
 ## API and Data Sample
 
-# Comments
+### Comments
 
 "records": [
 {
@@ -47,7 +47,7 @@ https://whimsical.com/epp-component-hierarchy-LNYLrwjjxN726EEz9EBWPP
 },
 "createdTime": "2021-10-22T02:36:36.000Z"
 
-# Questions
+### Questions
 
 "records": [
 {
@@ -60,7 +60,7 @@ https://whimsical.com/epp-component-hierarchy-LNYLrwjjxN726EEz9EBWPP
 "createdTime": "2021-10-22T05:11:30.000Z"
 },
 
-#### MVP
+## MVP
 
 - React app
 - Utilize React Router
@@ -74,7 +74,7 @@ https://whimsical.com/epp-component-hierarchy-LNYLrwjjxN726EEz9EBWPP
 - Deployment
 - 50 Total Commits
 
-#### PostMVP
+## PostMVP
 
 - Add search that will produce page of related topics on results page
 - Add video player of relative youtube videos
