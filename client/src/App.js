@@ -2,7 +2,8 @@
 // import axios from 'axios';
 // import ReactPlayer from 'react-player';
 import { Link, Route } from "react-router-dom";
-import Content from './components/Content.js'
+import Content from './components/Content.js';
+import ShowContent from "./components/ShowContent.js";
 import './App.css';
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
         <Route path='/content' exact>
           <h1>CONTENT PATH</h1>
           <Content />
+        </Route>
+        <Route path='/:id' exact>
+          <ShowContent />
         </Route>
       </div>
     </div>
