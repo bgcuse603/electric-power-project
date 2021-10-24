@@ -19,11 +19,12 @@ function App() {
       <div>
         <Route path='/' exact>
           <h1>HOME PATH</h1>
-        </Route>
-        <Route path='/content' exact>
-          <h1>CONTENT PATH</h1>
           <Content />
         </Route>
+        {/* <Route path='/content' exact>
+          <h1>CONTENT PATH</h1>
+          <Content />
+        </Route> */}
         <Route path='/:id' exact>
           <ShowContent />
         </Route>

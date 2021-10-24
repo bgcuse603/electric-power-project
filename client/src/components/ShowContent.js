@@ -24,14 +24,28 @@ const ShowContent = () => {
 
   console.log('single content display');
   console.log(contents);
+  let title = '';
+  let source = '';
+  let body = '';
+
+  if (contents.length === 0) {
+    title = 'empty';
+    source = 'empty';
+    body = 'empty';
+  } else {
+    title = contents.fields.title;
+    source = contents.fields.source;
+    body = contents.fields.content;
+  }
   // console.log(`${contents ? contents.fields.title : null}`);
   // console.log(`${contents ? contents.fields.source : null}`);
   // console.log(`${contents ? contents.fields.contents : null}`);
   return (
     <div>
-      <h1>{contents ? contents.fields.title : null}</h1>
-      {/* <h3>{contents ? contents.fields.source : null}</h3> */}
-      {/* <p>{contents ? contents.fields.content : null}</p> */}
+      <h1>Product</h1>
+      <h1>{contents ? title : null}</h1>
+      <h3>{contents ? source : null}</h3>
+      <p>{contents ? body : null}</p>
       
     </div>
   )
