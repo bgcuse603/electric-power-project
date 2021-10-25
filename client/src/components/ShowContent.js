@@ -6,9 +6,6 @@ import { useParams } from 'react-router-dom';
 const ShowContent = () => {
   const [contents, setContents] = useState([]);
   const recordId = useParams();
-  // console.log('im in show content');
-  // console.log(recordId);
-  // console.log(`${recordId.id}`);
 
   useEffect(() => {
     async function apiCall() {
@@ -17,14 +14,11 @@ const ShowContent = () => {
 
       const contentURL = (`${APIUrl}${recordId.id}${apiKey}`);
       const response = await axios.get(contentURL);
-      // console.log(response.data);
       setContents(response.data);
     }
     apiCall();
   }, []);
 
-  // console.log('single content display');
-  // console.log(contents);
   let title = '';
   let source = '';
   let body = '';
@@ -39,21 +33,13 @@ const ShowContent = () => {
     body = contents.fields.content;
   }
 
-// {contents.length === 0 ? title = 'loading' : contents.fields.title
-// };
-  // console.log(`${contents ? contents.fields.title : null}`);
-  // console.log(`${contents ? contents.fields.source : null}`);
-  // console.log(`${contents ? contents.fields.contents : null}`);
   return (
     <div>
       <h1>Product</h1>
       <h1>{title}</h1>
       <h3>{source}</h3>
       <p>{body}</p>
-      {/* <h1>{contents ? title : null}</h1>
-      <h3>{contents ? source : null}</h3>
-      <p>{contents ? body : null}</p> */}
-      
+
     </div>
   )
 }
