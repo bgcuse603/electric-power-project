@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import CommentForm from './CommentForm.js';
 
 
 const ShowComments = () => {
@@ -55,10 +56,17 @@ const ShowComments = () => {
   console.log(recordSpecificComments);
   return (
     <div>
+      <h1>Leave a Comment:</h1>
+      <CommentForm
+        recordId={recordId.id}
+        />
       <h1>COMMENTS:</h1>
       <ul>
         {recordSpecificComments.map((comment) => (
-         <h2 key={comment.id}> {comment.fields.author}</h2> 
+        <li key={comment.id}>
+            <h5>{comment.fields.author}</h5>
+            <em>{comment.fields.comment}</em>
+        </li>
       ))}
     </ul>
     </div>
