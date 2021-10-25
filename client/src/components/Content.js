@@ -24,7 +24,7 @@ const Content = () => {
       <ul>
       {contents.map((content) => (
         // <h2 key={content.id}> {content.fields.name}</h2>
-        <Link to={`/${content.id}`} key={content.id}>{content.fields.title}</Link>
+        <Link to={`/individual/${content.id}`} key={content.id}>{content.fields.title}</Link>
       ))} 
     </ul>
     </div>

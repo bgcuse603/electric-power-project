@@ -4,6 +4,7 @@
 import { Link, Route } from "react-router-dom";
 import Content from './components/Content.js';
 import ShowContent from "./components/ShowContent.js";
+import ShowComments from "./components/ShowComments.js";
 import './App.css';
 
 function App() {
@@ -14,19 +15,21 @@ function App() {
     <div>
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/content">Content</Link>
+        <Link to="/question">Question</Link>
       </nav>
       <div>
         <Route path='/' exact>
           <h1>HOME PATH</h1>
           <Content />
         </Route>
-        {/* <Route path='/content' exact>
-          <h1>CONTENT PATH</h1>
-          <Content />
-        </Route> */}
-        <Route path='/:id' exact>
+    
+        <Route path='/individual/:id'>
           <ShowContent />
+          <ShowComments />
+        </Route>
+
+        <Route path='/question'>
+          <h1>question</h1>
         </Route>
       </div>
     </div>
