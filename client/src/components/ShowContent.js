@@ -6,9 +6,9 @@ import { useParams } from 'react-router-dom';
 const ShowContent = () => {
   const [contents, setContents] = useState([]);
   const recordId = useParams();
-  console.log('im in show content');
-  console.log(recordId);
-  console.log(`${recordId.id}`);
+  // console.log('im in show content');
+  // console.log(recordId);
+  // console.log(`${recordId.id}`);
 
   useEffect(() => {
     async function apiCall() {
@@ -17,14 +17,14 @@ const ShowContent = () => {
 
       const contentURL = (`${APIUrl}${recordId.id}${apiKey}`);
       const response = await axios.get(contentURL);
-      console.log(response.data);
+      // console.log(response.data);
       setContents(response.data);
     }
     apiCall();
   }, []);
 
-  console.log('single content display');
-  console.log(contents);
+  // console.log('single content display');
+  // console.log(contents);
   let title = '';
   let source = '';
   let body = '';

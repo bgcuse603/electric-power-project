@@ -1,17 +1,14 @@
 import { useState } from 'react';
 import axios from 'axios';
-// import { Redirect } from 'react-router-dom';
 
 const API_URL = 'https://api.airtable.com/v0/appfMQimLWOpFJ1a4/comments?api_key=keymXba1arq3mAVA3';
 
-const CommentForm = (props) => {
+const CommentForm = ({recordId, toggleFetch, setToggleFetch}) => {
 
   const [comment, setComment] = useState('');
   const [author, setAuthor] = useState('');
-  const [toggleFetch, setToggleFetch] = useState(true);
-  const [redirectHome, setRedirectHome] = useState();
-  console.log(props.recordId);
-  let referenceid = props.recordId;
+
+  let referenceid = recordId;
 
   const handlePostRequest = async (ev) => {
     ev.preventDefault();
@@ -27,20 +24,14 @@ const CommentForm = (props) => {
         }
       ]
     }
-
     await axios.post(API_URL, newComment);
-    
     setToggleFetch(!toggleFetch);
-    setRedirectHome(true);
   }
 
-  // if (redirectHome) {
-  //   return <Redirect to='/'/>
-  // }
 
   return (
     <div>
-      {/* <form> */}
+
       <form onSubmit={handlePostRequest}>
           <label htmlFor="author">Your Name: </label>
           <input type="text" id="author" onChange={(ev) => setAuthor(ev.target.value)} />

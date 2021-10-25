@@ -6,10 +6,11 @@ import CommentForm from './CommentForm.js';
 
 const ShowComments = () => {
   const [comments, setComments] = useState([]);
+  const [toggleFetch, setToggleFetch] = useState(true);
   const recordId = useParams();
-  console.log('im in show comments');
-  console.log(recordId);
-  console.log(`${recordId.id}`);
+  // console.log('im in show comments');
+  // console.log(recordId);
+  // console.log(`${recordId.id}`);
 
   useEffect(() => {
     async function apiCall() {
@@ -18,22 +19,22 @@ const ShowComments = () => {
 
       const commentURL = (`${APIUrl}${apiKey}`);
       const response = await axios.get(commentURL);
-      console.log(response.data.records);
+      // console.log(response.data.records);
       setComments(response.data.records);
     }
     apiCall();
-  }, []);
+  }, [toggleFetch]);
 
-  console.log('comments');
-  console.log(comments);
+  // console.log('comments');
+  // console.log(comments);
 
   let recordSpecificComments = [];
   if (comments.length !== 0) {
     let j = 0;
     for (let i = 0; i < comments.length; i++) {
       if (comments[i].fields.referenceid === recordId.id) {
-        console.log(j);
-        console.log(comments[i]);
+        // console.log(j);
+        // console.log(comments[i]);
         recordSpecificComments[j] = comments[i];
         j++;
       }
@@ -52,13 +53,15 @@ const ShowComments = () => {
     ];
   }
 
-  console.log('specific comments');
-  console.log(recordSpecificComments);
+  // console.log('specific comments');
+  // console.log(recordSpecificComments);
   return (
     <div>
       <h1>Leave a Comment:</h1>
       <CommentForm
         recordId={recordId.id}
+        toggleFetch={toggleFetch}
+        setToggleFetch={setToggleFetch}
         />
       <h1>COMMENTS:</h1>
       <ul>
