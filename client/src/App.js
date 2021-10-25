@@ -5,6 +5,7 @@ import { Link, Route } from "react-router-dom";
 import Content from './components/Content.js';
 import ShowContent from "./components/ShowContent.js";
 import ShowComments from "./components/ShowComments.js";
+import QuestionForm from "./components/QuestionForm.js";
 import './App.css';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
 
         <Route path='/question'>
           <h1>question</h1>
+          <QuestionForm />
         </Route>
       </div>
     </div>
