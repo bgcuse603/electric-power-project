@@ -17,7 +17,7 @@ const Content = () => {
 
   return (
     <div>
-      <h1> content function </h1>
+      <h2> Available Topics: </h2>
       <ul>
       {contents.map((content) => (
         <Link to={`/individual/${content.id}`} key={content.id}>{content.fields.title}</Link>

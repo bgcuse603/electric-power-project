@@ -11,13 +11,16 @@ import Search from "./components/Search.js";
 import './App.css';
 
 function App() {
-  
+
   return (
     <div>
       <nav>
         <Link to="/">Home</Link>
         <Link to="/question">Question</Link>
       </nav>
+      {/* <div className="header">
+        <img src="https://imgur.com/cj4tNXP"/>
+      </div> */}
       <div>
         <Route path='/' exact>
           <h1>HOME PATH</h1>
