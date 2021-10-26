@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-
+import ReactPlayer from 'react-player';
 
 const ShowContent = () => {
   const [contents, setContents] = useState([]);
@@ -22,16 +22,25 @@ const ShowContent = () => {
   let title = '';
   let source = '';
   let body = '';
+  let mediatype = '';
+  let medialink = '';
 
   if (contents.length === 0) {
     title = 'loading';
     source = 'loading';
     body = 'loading';
+    mediatype = 'loading';
+    medialink = 'loading';
   } else {
     title = contents.fields.title;
     source = contents.fields.source;
     body = contents.fields.content;
+    mediatype = contents.fields.mediatype;
+    medialink = contents.fields.medialink;
   }
+
+  console.log(mediatype);
+  console.log(medialink);
 
   return (
     <div>
@@ -39,6 +48,16 @@ const ShowContent = () => {
       <h1>{title}</h1>
       <h3>{source}</h3>
       <p>{body}</p>
+      <img
+        src={medialink}
+        alt=""
+        style={mediatype !== 'video' ? {display:'block'} : {display:'none'} }
+      />
+      <ReactPlayer
+        url={medialink}
+        alt=""
+        style={mediatype === 'video' ? { display: 'block' } : { display: 'none' }}
+      />
 
     </div>
   )
