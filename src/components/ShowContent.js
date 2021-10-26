@@ -5,13 +5,13 @@ import ReactPlayer from 'react-player';
 
 const ShowContent = () => {
   const [contents, setContents] = useState([]);
-  const recordId = useParams();
+  let recordId = useParams();
   
   useEffect(() => {
     async function apiCall() {
       const APIUrl = 'https://api.airtable.com/v0/appfMQimLWOpFJ1a4/content/';
       const apiKey = '/?api_key=keymXba1arq3mAVA3';
-
+      
       const contentURL = (`${APIUrl}${recordId.id}${apiKey}`);
       const response = await axios.get(contentURL);
       setContents(response.data);

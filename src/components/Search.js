@@ -64,7 +64,7 @@ const Search = () => {
     <div>
       <h1> Search Results for: {`${searchTerm.term}`} </h1>
       <ul>
-      {searchResults .map((results) => (
+      {searchResults.map((results) => (
         <Link to={`/individual/${results.id}`} key={results.id}>{results.fields.title}</Link>
       ))} 
     </ul>
