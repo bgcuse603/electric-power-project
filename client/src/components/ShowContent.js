@@ -44,10 +44,7 @@ const ShowContent = () => {
 
   return (
     <div>
-      <h1>Product</h1>
       <h1>{title}</h1>
-      <h3>{source}</h3>
-      <p>{body}</p>
       <img
         src={medialink}
         alt=""
@@ -58,7 +55,13 @@ const ShowContent = () => {
         alt=""
         style={mediatype === 'video' ? { display: 'block' } : { display: 'none' }}
       />
-
+      {/* <script
+        src="https://www.buzzsprout.com/1740726/9436340-intro.js?container_id=buzzsprout-player-9436340&player=small" type="text/javascript"
+        charset="utf-8"
+        style={mediatype === 'podcast' ? { display: 'block' } : { display: 'none' }}
+      ></script> */}
+      <p>{body}</p>
+      <h3>Source: {source}</h3>
     </div>
   )
 }

@@ -6,6 +6,8 @@ import Content from './components/Content.js';
 import ShowContent from "./components/ShowContent.js";
 import ShowComments from "./components/ShowComments.js";
 import QuestionForm from "./components/QuestionForm.js";
+import SearchBar from "./components/SearchBar.js";
+import Search from "./components/Search.js";
 import './App.css';
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
       <div>
         <Route path='/' exact>
           <h1>HOME PATH</h1>
+          <SearchBar />
           <Content />
         </Route>
     
@@ -30,6 +33,11 @@ function App() {
         <Route path='/question'>
           <h1>question</h1>
           <QuestionForm />
+        </Route>
+        
+        <Route path='/search/:term'>
+          <h1>search PATH</h1>
+          <Search />
         </Route>
       </div>
     </div>
