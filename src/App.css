@@ -1,14 +1,54 @@
-/* .App {
-  text-align: center;
+/* font-family: 'Andika New Basic', sans-serif;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Chakra Petch', sans-serif; */
+
+/*Global*/
+body {
+  font-family: "Andika New Basic", sans-serif;
+  font-size: 12px;
+}
+header,
+main,
+footer {
+  flex-shrink: 0;
+}
+main {
+  flex-grow: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-body {
-  /* background-color: #f6e3a7; */
+p {
+  font-family: "Andika New Basic", sans-serif;
+  font-size: 12px;
+  margin: 5px;
 }
+
+h1 {
+  font-family: "Chakra Petch", sans-serif;
+  color: #f2be12;
+}
+
+h2 {
+  font-family: "Chakra Petch", sans-serif;
+  color: #1a1a1a;
+}
+
+h3 {
+  font-family: "Chakra Petch", sans-serif;
+  color: #f2d05e;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  background-color: #f2be12;
+  color: white;
+  width: 100%;
+}
+/*Home Page*/
 .header {
   background-color: white;
   display: flex;
@@ -17,19 +57,6 @@ body {
 
 .logo-home {
   width: 50%;
-}
-
-.image-content {
-  width: 100%;
-}
-
-.react-player {
-  width: 100%;
-}
-
-nav {
-  display: flex;
-  justify-content: space-evenly;
 }
 ul.topicLinksAll {
   display: flex;
@@ -41,12 +68,15 @@ ul.topicLinksLimited {
   height: 150px;
   overflow: hidden;
 }
-
-.footer {
-  font-size: 10px;
-  color: gray;
+/*Content Page*/
+.image-content {
   width: 100%;
 }
+
+.react-player {
+  width: 100%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

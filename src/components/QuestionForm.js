@@ -30,7 +30,8 @@ const QuestionForm = () => {
 
 
   return (
-    <div>
+    <div className="question">
+      <h1>question</h1>
       <form onSubmit={handlePostRequest}>
           <label htmlFor="yourname"> </label>
         <input type="text" placeholder="Name" id="yourname" onChange={(ev) => setYourName(ev.target.value)} />

@@ -17,37 +17,53 @@ function App() {
 
   return (
     <div>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/question">Question</Link>
-      </nav>
-      <div>
+      <header>
+        <nav>
+          <Link to="/">home</Link>
+          <Link to="/about">about</Link>
+          <Link to="/question">question</Link>
+        </nav>
+      </header>
+
+      <main>
         <Route path='/' exact>
           <div className="header">
-            <img src="eppLogoWhite-cropped.jpeg" alt="logo" className="logo-home"/>
+            <img src="eppLogoWhite-cropped.jpeg" alt="logo" className="logo-home" />
           </div>
-          <About />
-          <SearchBar />
-          <Content />
+          <div>
+            <p>The Electric Power Project (EPP) is a repository of information for the electrical industry. </p>
+          </div>
+          <div className="searchBar">
+            <SearchBar />
+          </div>
+          <div className="content-home">
+            <Content />
+          </div>
         </Route>
-    
+
+        <Route path='/about'>
+            <About />
+        </Route>
+
         <Route path='/individual/:id'>
           <ShowContent />
           <ShowComments />
         </Route>
 
         <Route path='/question'>
-          <h1>question</h1>
           <QuestionForm />
         </Route>
-        
+
         <Route path='/search/:term'>
           <Search />
         </Route>
-      </div>
-      <div className="footer">
-        <Footer />
-      </div>
+
+      </main>
+      <footer>
+        <div className="footer">
+          <Footer />
+        </div>
+      </footer>
     </div>
   );
 }
