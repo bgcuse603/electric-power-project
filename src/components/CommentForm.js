@@ -31,15 +31,15 @@ const CommentForm = ({recordId, toggleFetch, setToggleFetch}) => {
 
   return (
     <div>
-
       <form onSubmit={handlePostRequest}>
-          <label htmlFor="author">Your Name: </label>
-          <input type="text" id="author" onChange={(ev) => setAuthor(ev.target.value)} />
-          <label htmlFor="comment">Your Comment: </label>
-          <input type="text" id="comment" onChange={(ev) => setComment(ev.target.value)} />
+        <label htmlFor="author"> </label>
+        <input type="text" placeholder="Name" id="author" onChange={(ev) => setAuthor(ev.target.value)} />
         <br />
-          <input type="submit" />
-        </form>
+        <label htmlFor="comment"> </label>
+        <input type="text" placeholder="Comment" id="comment" onChange={(ev) => setComment(ev.target.value)} />
+        <br />
+        <input type="submit" />
+      </form>
     </div>
   )
 }

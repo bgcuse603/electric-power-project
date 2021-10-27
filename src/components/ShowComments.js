@@ -46,13 +46,14 @@ const ShowComments = () => {
 
   return (
     <div>
-      <h1>Leave a Comment:</h1>
+      <hr />
+      <h3>Leave a Comment:</h3>
       <CommentForm
         recordId={recordId.id}
         toggleFetch={toggleFetch}
         setToggleFetch={setToggleFetch}
         />
-      <h1>COMMENTS:</h1>
+      <h3>Comments:</h3>
       <ul>
         {recordSpecificComments.map((comment) => (
         <li key={comment.id}>

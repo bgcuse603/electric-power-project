@@ -6,7 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 } */
-
+body {
+  /* background-color: #f6e3a7; */
+}
 .header {
   background-color: white;
   display: flex;
@@ -29,11 +31,22 @@ nav {
   display: flex;
   justify-content: space-evenly;
 }
-ul {
+ul.topicLinksAll {
   display: flex;
   flex-direction: column;
 }
+ul.topicLinksLimited {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  overflow: hidden;
+}
 
+.footer {
+  font-size: 10px;
+  color: gray;
+  width: 100%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
