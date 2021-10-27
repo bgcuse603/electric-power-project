@@ -11,8 +11,7 @@ const SearchBar = () => {
     ev.preventDefault();
     setRedirect(true);
   }
-  console.log(searchTerm);
-  console.log(redirect);
+  
 
   if (redirect === true) {
     console.log('im within the if');
@@ -21,8 +20,8 @@ const SearchBar = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-          <label htmlFor="search">Search: </label>
-          <input type="text" id="search" onChange={(ev) => setSearchTerm(ev.target.value)} />
+          <label htmlFor="search" />
+          <input type="text" placeholder= "Search" id="search" onChange={(ev) => setSearchTerm(ev.target.value)}/>
         <br />
           <input type="submit" />
         </form>

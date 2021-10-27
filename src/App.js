@@ -8,9 +8,12 @@ import ShowComments from "./components/ShowComments.js";
 import QuestionForm from "./components/QuestionForm.js";
 import SearchBar from "./components/SearchBar.js";
 import Search from "./components/Search.js";
+import About from "./components/About.js"
+import Footer from "./components/Footer.js"
 import './App.css';
 
 function App() {
+  console.log(`${process.env.REACT_APP_API_KEY}`);
 
   return (
     <div>
@@ -18,12 +21,12 @@ function App() {
         <Link to="/">Home</Link>
         <Link to="/question">Question</Link>
       </nav>
-      {/* <div className="header">
-        <img src="https://imgur.com/cj4tNXP"/>
-      </div> */}
       <div>
         <Route path='/' exact>
-          <h1>HOME PATH</h1>
+          <div className="header">
+            <img src="eppLogoWhite-cropped.jpeg" alt="logo" className="logo-home"/>
+          </div>
+          <About />
           <SearchBar />
           <Content />
         </Route>
@@ -39,9 +42,11 @@ function App() {
         </Route>
         
         <Route path='/search/:term'>
-          <h1>search PATH</h1>
           <Search />
         </Route>
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </div>
   );
