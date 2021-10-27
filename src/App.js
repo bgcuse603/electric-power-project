@@ -14,24 +14,30 @@ import './App.css';
 
 function App() {
   console.log(`${process.env.REACT_APP_API_KEY}`);
+  const navLinkStyle = {
+    textDecoration: "none",
+    color: "#D1A10C",
+    fontSize: "15px",
+  };
 
   return (
     <div>
       <header>
+        <div className="header">
+          <img src="eppLogoWhite-cropped.jpeg" alt="logo" className="logo-home" />
+        </div>
         <nav>
-          <Link to="/">home</Link>
-          <Link to="/about">about</Link>
-          <Link to="/question">question</Link>
+          <Link to="/" style={navLinkStyle}>home</Link>
+          <Link to="/about" style={navLinkStyle}>about</Link>
+          <Link to="/question" style={navLinkStyle}>question</Link>
         </nav>
+       
       </header>
 
       <main>
         <Route path='/' exact>
-          <div className="header">
-            <img src="eppLogoWhite-cropped.jpeg" alt="logo" className="logo-home" />
-          </div>
-          <div>
-            <p>The Electric Power Project (EPP) is a repository of information for the electrical industry. </p>
+          <div className="homeDescription">
+            {/* <p>The Electric Power Project (EPP) is a repository of information for the electrical industry. </p> */}
           </div>
           <div className="searchBar">
             <SearchBar />
@@ -57,8 +63,9 @@ function App() {
         <Route path='/search/:term'>
           <Search />
         </Route>
-
+        <br/>
       </main>
+
       <footer>
         <div className="footer">
           <Footer />

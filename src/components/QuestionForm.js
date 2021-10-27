@@ -31,7 +31,8 @@ const QuestionForm = () => {
 
   return (
     <div className="question">
-      <h1>question</h1>
+      <h1>question for EPP</h1>
+      <div className="questionSUB">
       <form onSubmit={handlePostRequest}>
           <label htmlFor="yourname"> </label>
         <input type="text" placeholder="Name" id="yourname" onChange={(ev) => setYourName(ev.target.value)} />
@@ -40,10 +41,11 @@ const QuestionForm = () => {
         <input type="text" placeholder="Email" id="email" onChange={(ev) => setEmail(ev.target.value)} />
         <br />
           <label htmlFor="question"> </label>
-          <input type="text" placeholder="Question" id="question" onChange={(ev) => setQuestion(ev.target.value)} />
+          <input type="textarea" placeholder="Question" id="question" onChange={(ev) => setQuestion(ev.target.value)} />
         <br />
           <input type="submit" />
         </form>
+      </div>
     </div>
   )
 }

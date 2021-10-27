@@ -5,41 +5,36 @@ font-family: 'Chakra Petch', sans-serif; */
 /*Global*/
 body {
   font-family: "Andika New Basic", sans-serif;
-  font-size: 12px;
-}
-header,
-main,
-footer {
-  flex-shrink: 0;
-}
-main {
-  flex-grow: 1;
+  font-size: 15px;
 }
 
 p {
-  font-family: "Andika New Basic", sans-serif;
-  font-size: 12px;
   margin: 5px;
 }
 
 h1 {
   font-family: "Chakra Petch", sans-serif;
   color: #f2be12;
+  font-size: 26px;
 }
 
 h2 {
   font-family: "Chakra Petch", sans-serif;
+  font-size: 23px;
   color: #1a1a1a;
 }
 
 h3 {
   font-family: "Chakra Petch", sans-serif;
-  color: #f2d05e;
+  font-size: 20px;
+  color: #d1a10c;
 }
 nav {
   display: flex;
   justify-content: space-evenly;
+  padding: 5px;
 }
+
 .footer {
   display: flex;
   justify-content: center;
@@ -47,12 +42,46 @@ nav {
   background-color: #f2be12;
   color: white;
   width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 /*Home Page*/
 .header {
   background-color: white;
   display: flex;
   justify-content: center;
+  padding-top: 10px;
+}
+button {
+  color: white;
+  font-size: 15px;
+  background-color: #f2be12;
+  font-weight: bold;
+  width: 50%;
+  height: 35px;
+  border-radius: 5px;
+}
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+}
+.topics {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.searchBar {
+  display: flex;
+  justify-content: center;
+  background-color: #f2be12;
+  padding: 12px;
+  padding-left: 100px;
 }
 
 .logo-home {
@@ -65,7 +94,7 @@ ul.topicLinksAll {
 ul.topicLinksLimited {
   display: flex;
   flex-direction: column;
-  height: 150px;
+  height: 100px;
   overflow: hidden;
 }
 /*Content Page*/
@@ -75,6 +104,24 @@ ul.topicLinksLimited {
 
 .react-player {
   width: 100%;
+}
+
+/*Search Page*/
+ul.searchDisplay {
+  display: flex;
+  flex-direction: column;
+}
+/*About*/
+/*Question*/
+.questionSUB {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 80px;
+}
+form {
+  width: 350px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

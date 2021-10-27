@@ -7,6 +7,12 @@ const Content = () => {
   const [showMore, setShowMore] = useState(false);
   let displayLinks = '';
   let displayButton = 'Show More';
+  const contentLinkStyle = {
+    color: "black",
+    textDecoration: "underline",
+    textDecorationColor: "#D1A10C",
+    
+  };
     
   useEffect(() => {
     async function apiCall() {
@@ -24,23 +30,33 @@ const Content = () => {
 
   if (showMore === true) {
     displayLinks = 'topicLinksAll';
-    displayButton = 'Show Less';
+    displayButton = 'show less';
   } else {
     displayLinks = 'topicLinksLimited';
-    displayButton = 'Show More';
+    displayButton = 'show more';
   }
 
 
 
   return (
-    <div>
-      <h3> Available Topics </h3>
+    <div className="topics">
+      <h3> available topics </h3>
       <ul className={`${displayLinks}`}>
       {contents.map((content) => (
-        <Link to={`/individual/${content.id}`} key={content.id}>{content.fields.title}</Link>
+        <Link to={`/individual/${content.id}`} key={content.id} style={contentLinkStyle}>{content.fields.title}</Link>
       ))} 
       </ul>
-      <button onClick={handleButton}>{`${displayButton}`}</button>
+      <br />
+      <div className="buttonDiv">
+          <br />
+          <br />
+          <br />
+        <button onClick={handleButton}>{`${displayButton}`}</button>
+          <br />
+          <br />
+          <br />
+      </div>
+      
     </div>
   )
 }

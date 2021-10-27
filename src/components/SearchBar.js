@@ -19,14 +19,14 @@ const SearchBar = () => {
   }
   return (
     <div>
-      <hr />
+    
       <form onSubmit={handleSubmit}>
           <label htmlFor="search" />
           <input type="text" placeholder= "Search" id="search" onChange={(ev) => setSearchTerm(ev.target.value)}/>
         <br />
-          <input type="submit" />
+        <input type="submit" />
       </form>
-      <hr />
+  
     </div>
   )
 }

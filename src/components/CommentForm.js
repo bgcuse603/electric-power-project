@@ -36,7 +36,7 @@ const CommentForm = ({recordId, toggleFetch, setToggleFetch}) => {
         <input type="text" placeholder="Name" id="author" onChange={(ev) => setAuthor(ev.target.value)} />
         <br />
         <label htmlFor="comment"> </label>
-        <input type="text" placeholder="Comment" id="comment" onChange={(ev) => setComment(ev.target.value)} />
+        <input type="textarea" placeholder="Comment" id="comment" onChange={(ev) => setComment(ev.target.value)} />
         <br />
         <input type="submit" />
       </form>
