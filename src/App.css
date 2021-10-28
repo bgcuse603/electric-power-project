@@ -7,7 +7,10 @@ body {
   font-family: "Andika New Basic", sans-serif;
   font-size: 15px;
 }
-
+main {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 p {
   margin: 5px;
 }
@@ -42,6 +45,11 @@ h5 {
   font-size: 16px;
   font-weight: bold;
   color: #d1a10c;
+}
+h6 {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 10px;
+  color: #1a1a1a;
 }
 nav {
   display: flex;
@@ -95,7 +103,7 @@ button {
   justify-content: center;
   background-color: #f2be12;
   padding: 12px;
-  padding-left: 100px;
+  padding-left: 50px;
 }
 
 .logo-home {
@@ -136,9 +144,15 @@ ul.searchDisplay {
 }
 form {
   width: 350px;
+  margin-left: 25px;
 }
 li {
   list-style-type: none;
+}
+
+/*About*/
+.disclaimer {
+  font-size: 10px;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

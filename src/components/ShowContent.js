@@ -61,7 +61,6 @@ const ShowContent = () => {
         width='100%'
       />
       <h4>sourced by  </h4>
-      <br />
       <h5>{source}</h5>
       <br />
       <p>{body}</p>

@@ -5,10 +5,11 @@ const About = () => {
         <h1>about</h1>
         <p>The Electric Power Project (EPP) is a repository of information for the electrical industry with the mission of breaking down complex concepts to a digestable form. </p>
         <p>During early deployment of EPP the content will tailored for the electrical sales, but information remains beneficial across roles within the industry. </p>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </div>
 
       <div className="disclaimer">
-        <hr />
         <em>Disclaimers:</em>
         <br/>
         <em>Content includes both original and manufacturer sourced information. However, the Electric Power Project is operated independent of a manufacturer. Any comments or opinions made within the site contents are not on behalf of any company.</em>
