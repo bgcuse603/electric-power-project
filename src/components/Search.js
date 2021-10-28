@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { useParams } from 'react-router-dom';
+import SearchBar from './SearchBar';
 
 let j = 0;
 let title = '';
@@ -83,7 +84,9 @@ const Search = () => {
       {searchResults.map((result) => (
         <Link to={`/individual/${result.id}`} key={result.id}>{result.fields.title}</Link>
       ))} 
-    </ul>
+      </ul>
+      <h5> Not what you were looking for? </h5>
+      <SearchBar />
     </div>
   )
 }
