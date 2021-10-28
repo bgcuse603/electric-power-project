@@ -36,8 +36,6 @@ const Content = () => {
     displayButton = 'show more';
   }
 
-
-
   return (
     <div className="topics">
       <h3> available topics </h3>

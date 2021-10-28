@@ -27,6 +27,20 @@ h2 {
 h3 {
   font-family: "Chakra Petch", sans-serif;
   font-size: 20px;
+  font-weight: bold;
+  color: #d1a10c;
+}
+
+h4 {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+h5 {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
   color: #d1a10c;
 }
 nav {
@@ -123,7 +137,9 @@ ul.searchDisplay {
 form {
   width: 350px;
 }
-
+li {
+  list-style-type: none;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

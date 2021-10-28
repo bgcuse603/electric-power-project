@@ -46,14 +46,13 @@ const ShowComments = () => {
 
   return (
     <div>
-      <hr />
-      <h3>Leave a Comment:</h3>
+      <h3>leave a comment</h3>
       <CommentForm
         recordId={recordId.id}
         toggleFetch={toggleFetch}
         setToggleFetch={setToggleFetch}
         />
-      <h3>Comments:</h3>
+      <h3>comments</h3>
       <ul>
         {recordSpecificComments.map((comment) => (
         <li key={comment.id}>
@@ -61,7 +60,9 @@ const ShowComments = () => {
             <em>{comment.fields.comment}</em>
         </li>
       ))}
-    </ul>
+      </ul>
+      <br />
+      <br />
     </div>
   )
 }

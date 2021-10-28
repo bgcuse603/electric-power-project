@@ -21,23 +21,19 @@ const ShowContent = () => {
     apiCall();
   }, [recordId]);
 
-  // let key = '';
   let title = '';
   let source = '';
   let body = '';
   let mediatype = '';
   let medialink = '';
-  // console.log(key);
 
   if (contents.length === 0) {
-    // key = 0;
     title = 'loading';
     source = 'loading';
     body = 'loading';
     mediatype = 'written';
     medialink = 'https://i.imgur.com/cj4tNXP.jpg';
   } else {
-    // key = contents.id;
     title = contents.fields.title;
     source = contents.fields.source;
     body = contents.fields.content;
@@ -45,8 +41,8 @@ const ShowContent = () => {
     medialink = contents.fields.medialink;
   }
 
-  console.log(mediatype);
-  console.log(medialink);
+  console.log(contents.id);
+  // console.log(medialink);
 
   return (
     <div>
@@ -64,20 +60,11 @@ const ShowContent = () => {
         className="react-player"
         width='100%'
       />
-      {/* <iframe
-        src={`${medialink}?client_source=small_player&iframe=true`}
-        loading="lazy"
-        // width="100%"
-        // height="200"
-        // frameborder="0"
-        // scrolling="no"
-        title={`${title}`}
-        // key={key}
-      style={mediatype === 'listen' ? { display: 'block' } : { display: 'none' }} 
-      >
-        </iframe> */}
+      <h4>sourced by  </h4>
+      <br />
+      <h5>{source}</h5>
+      <br />
       <p>{body}</p>
-      <h3>Source: {source}</h3>
     </div>
   )
 }

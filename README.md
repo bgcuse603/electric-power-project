@@ -85,12 +85,12 @@ https://whimsical.com/epp-component-hierarchy-LNYLrwjjxN726EEz9EBWPP
 
 | Day        | Deliverable                                            | Status     |
 | ---------- | ------------------------------------------------------ | ---------- |
-| October 22 | README / Wireframes / Component Hierarchy / Timeframes | Incomplete |
-| October 22 | Project Approval and Complete Airtable table           | Incomplete |
-| October 25 | Core Application Structure (HTML, CSS, etc.)           | Incomplete |
-| October 26 | Pseudocode / actual code                               | Incomplete |
-| October 27 | Initial Clickable Model and Styling                    | Incomplete |
-| October 28 | MVP                                                    | Incomplete |
+| October 22 | README / Wireframes / Component Hierarchy / Timeframes | Complete   |
+| October 22 | Project Approval and Complete Airtable table           | Complete   |
+| October 25 | Core Application Structure (HTML, CSS, etc.)           | Complete   |
+| October 26 | Pseudocode / actual code                               | Complete   |
+| October 27 | Initial Clickable Model and Styling                    | Complete   |
+| October 28 | MVP                                                    | Complete   |
 | October 29 | Presentations                                          | Incomplete |
 
 ## Timeframes
@@ -125,3 +125,7 @@ If executed properly, this project could be the first of my portfolio but have t
 ### Threats:
 
 I need to focus on developing a functional model that meets MVP before becoming absorbed by how I think it should look. Styling is of course important but I need to hit the initial project milestones of a function app first.
+
+## Deployed Site
+
+https://electric-power-project.netlify.app/
