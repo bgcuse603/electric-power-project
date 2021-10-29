@@ -51,7 +51,8 @@ h6 {
 nav {
   display: flex;
   justify-content: space-evenly;
-  padding: 5px;
+  /* padding: 5px; */
+  background-color: #f2be12;
 }
 
 .footer {

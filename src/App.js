@@ -13,8 +13,9 @@ function App() {
   console.log(`${process.env.REACT_APP_API_KEY}`);
   const navLinkStyle = {
     textDecoration: "none",
-    color: "#D1A10C",
+    color: "white",
     fontSize: "3vh",
+    fontFamily: "Chakra Petch",
   };
 
   return (
