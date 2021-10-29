@@ -15,6 +15,13 @@ const Search = () => {
   const searchTerm = useParams();
   let queryTerm = (searchTerm.term).toLowerCase();
 
+  const contentLinkStyle = {
+    color: "black",
+    textDecoration: "underline",
+    textDecorationColor: "#D1A10C",
+    
+  };
+
   useEffect(() => {
     async function apiCall() {
       const contentURL = "https://api.airtable.com/v0/appfMQimLWOpFJ1a4/content?api_key=keymXba1arq3mAVA3";
@@ -82,7 +89,7 @@ const Search = () => {
       <h2>{`${searchTerm.term}`}</h2>
       <ul className="searchDisplay">
       {searchResults.map((result) => (
-        <Link to={`/individual/${result.id}`} key={result.id}>{result.fields.title}</Link>
+        <Link to={`/individual/${result.id}`} style={contentLinkStyle} key={result.id}>{result.fields.title}</Link>
       ))} 
       </ul>
       <h5> Not what you were looking for? </h5>
