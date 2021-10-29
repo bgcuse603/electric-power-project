@@ -181,7 +181,9 @@ li {
   }
 
   .image-content {
-    width: 70%;
+    height: 50vh;
+    width: 70vh;
+    margin-left: 20vw;
   }
 
   .react-player {
