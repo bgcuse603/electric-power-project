@@ -4,22 +4,14 @@
 
 Walking in to meet a new customer for a sales person can be daunting task to start with even for a seasoned pro. Add in the added stress of repping a technically dense line card of products when you have no idea where this customer's needs may drive the conversation. Marketing teams try to help with pumping promotional material of the buzz worthy features and benefits but is that the information you actually need about a product when you're sitting across from a decision maker?
 
-The Electric Power Project is a repository of content for electrical sales that stops telling you how the watch is made, and starts telling you what time it is (so to speak) about products. This includes manufacturer neutral product basics, applications and sales notes. Along with additional resources for deeper dives into a topic.
+The Electric Power Project is a microlearning app for electrical content tailored for sales. This includes manufacturer neutral product basics, applications and sales notes. Along with additional resources for deeper dives into a topic.
 
 Application will include:
 
 - Home Page
-  - Links to available products and topics
-- Product Page
+  - Links to available content topics
+- Content Page
   - Basics, Applications and sales notes section
-  - Related topics - push to internal site topics
-  - Additional resources - push external to site
-  - Feed displaying user comments
-  - Form to post comment
-- Topic Page
-  - "blog post"
-  - Related topics - push to internal site topics
-  - Additional resources - push external to site
   - Feed displaying user comments
   - Form to post comment
 - Question Page
@@ -32,6 +24,10 @@ https://whimsical.com/epp-PV4LBuXkzsgKrgVNaEcUN1
 ## Component Hierarchy
 
 https://whimsical.com/epp-component-hierarchy-LNYLrwjjxN726EEz9EBWPP
+
+## Deployed Site
+
+https://electric-power-project.netlify.app/
 
 ## API and Data Sample
 
@@ -95,18 +91,18 @@ https://whimsical.com/epp-component-hierarchy-LNYLrwjjxN726EEz9EBWPP
 
 ## Timeframes
 
-| Component             | Priority | Estimated Time | Time Invested | Actual Time |
-| --------------------- | :------: | :------------: | :-----------: | :---------: |
-| Pre-approval Items    |    H     |      3hrs      |    0.0hrs     |   0.0hrs    |
-| Core React App Setup  |    H     |      4hrs      |    0.0hrs     |   0.0hrs    |
-| Product Pg Component  |    H     |      3hrs      |    0.0hrs     |   0.0hrs    |
-| Topic Pg Component    |    H     |      3hrs      |    0.0hrs     |   0.0hrs    |
-| Comments Form - POST  |    H     |      3hrs      |    0.0hrs     |   0.0hrs    |
-| Comments GET+Display  |    H     |      5hrs      |    0.0hrs     |   0.0hrs    |
-| Questions Form - POST |    H     |      3hrs      |    0.0hrs     |   0.0hrs    |
-| Styling               |    H     |     15hrs      |    0.0hrs     |   0.0hrs    |
-| Post-MVP              |    L     |     10hrs      |    0.0hrs     |   0.0hrs    |
-| Total                 |          |     49hrs      |     0hrs      |    0hrs     |
+| Component             | Priority | Estimated Time | Actual Time |
+| --------------------- | :------: | :------------: | :---------: |
+| Pre-approval Items    |    H     |      3hrs      |    5hrs     |
+| Core React App Setup  |    H     |      4hrs      |    6hrs     |
+| API Setup             |    H     |      2hrs      |    1hrs     |
+| Content Component     |    H     |      3hrs      |    4hrs     |
+| Comments Form - POST  |    H     |      3hrs      |    4hrs     |
+| Comments GET+Display  |    H     |      5hrs      |    6hrs     |
+| Questions Form - POST |    H     |      3hrs      |    3hrs     |
+| Styling               |    H     |     15hrs      |    18hrs    |
+| Post-MVP              |    L     |     10hrs      |    5hrs     |
+| Total                 |          |     49hrs      |    52hrs    |
 
 ## SWOT Analysis
 
@@ -125,7 +121,3 @@ If executed properly, this project could be the first of my portfolio but have t
 ### Threats:
 
 I need to focus on developing a functional model that meets MVP before becoming absorbed by how I think it should look. Styling is of course important but I need to hit the initial project milestones of a function app first.
-
-## Deployed Site
-
-https://electric-power-project.netlify.app/
