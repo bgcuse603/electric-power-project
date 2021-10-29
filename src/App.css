@@ -4,36 +4,27 @@ body {
   font-size: 15px;
   width: 100%;
 }
-
-p {
-  margin: 5px;
-}
-
 h1 {
   font-family: "Chakra Petch", sans-serif;
   color: #f2be12;
   font-size: 26px;
 }
-
 h2 {
   font-family: "Chakra Petch", sans-serif;
   font-size: 23px;
   color: #1a1a1a;
 }
-
 h3 {
   font-family: "Chakra Petch", sans-serif;
   font-size: 3vh;
   font-weight: bold;
   color: #d1a10c;
 }
-
 h4 {
   font-family: "Chakra Petch", sans-serif;
   font-size: 18px;
   color: #1a1a1a;
 }
-
 h5 {
   font-family: "Chakra Petch", sans-serif;
   font-size: 16px;
@@ -45,13 +36,14 @@ h6 {
   font-size: 10px;
   color: #1a1a1a;
 }
+p {
+  margin: 5px;
+}
 nav {
   display: flex;
   justify-content: space-evenly;
-  /* padding: 5px; */
   background-color: #f2be12;
 }
-
 .footer {
   display: flex;
   justify-content: center;
@@ -100,7 +92,6 @@ button {
   padding: 12px;
   padding-left: 50px;
 }
-
 .logo-home {
   width: 50%;
 }
@@ -118,17 +109,14 @@ ul.topicLinksLimited {
 .image-content {
   width: 100%;
 }
-
 .react-player {
   width: 100%;
 }
-
 /*Search Page*/
 ul.searchDisplay {
   display: flex;
   flex-direction: column;
 }
-
 /*Question*/
 .questionSUB {
   display: flex;
