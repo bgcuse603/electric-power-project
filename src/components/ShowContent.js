@@ -41,9 +41,6 @@ const ShowContent = () => {
     medialink = contents.fields.medialink;
   }
 
-  console.log(contents.id);
-  // console.log(medialink);
-
   return (
     <div className="showcontentDiv">
       <h1>{title}</h1>

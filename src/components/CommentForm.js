@@ -12,7 +12,7 @@ const CommentForm = ({recordId, toggleFetch, setToggleFetch}) => {
 
   const handlePostRequest = async (ev) => {
     ev.preventDefault();
-    // console.log('POST');
+    
     const newComment = {
       records: [
         {

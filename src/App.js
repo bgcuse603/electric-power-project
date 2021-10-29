@@ -1,6 +1,3 @@
-// import { useState, useEffect } from 'react';
-// import axios from 'axios';
-// import ReactPlayer from 'react-player';
 import { Link, Route } from "react-router-dom";
 import Content from './components/Content.js';
 import ShowContent from "./components/ShowContent.js";
@@ -35,17 +32,12 @@ function App() {
 
       <main>
         <Route path='/' exact>
-          {/* <div className="searchBar">
-            <SearchBar />
-          </div> */}
           <div className="content-home">
             <Content />
           </div>
           <div className="searchBar">
             <SearchBar />
           </div>
-          <br />
-          <br />
           <br />
           <br />
         </Route>
