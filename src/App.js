@@ -17,7 +17,7 @@ function App() {
   const navLinkStyle = {
     textDecoration: "none",
     color: "#D1A10C",
-    fontSize: "3vh",
+    fontSize: "2vh",
   };
 
   return (

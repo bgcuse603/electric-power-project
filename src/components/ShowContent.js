@@ -45,7 +45,7 @@ const ShowContent = () => {
   // console.log(medialink);
 
   return (
-    <div>
+    <div className="showcontentDiv">
       <h1>{title}</h1>
       <img
         src={medialink}

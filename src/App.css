@@ -165,6 +165,7 @@ li {
   .topics {
     display: flex;
     justify-content: center;
+    /* padding-left: 10vh; */
   }
   .content-home {
     display: flex;
@@ -175,12 +176,47 @@ li {
     font-size: 20px;
     width: 100%;
   }
-  /*Content Page*/
+
   .image-content {
     width: 70%;
   }
 
   .react-player {
-    width: 70%;
+    width: 300vw;
+    height: 500vh;
+  }
+  ul.topicLinksAll {
+    padding-left: 15vw;
+  }
+  ul.topicLinksLimited {
+    padding-left: 15vw;
+  }
+  h3 {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+  form {
+    margin-left: 40%;
+  }
+  .searchBar {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    padding-left: 0px;
+    padding-right: 15vw;
+  }
+  .showcontentDiv {
+    margin: 10vh;
+  }
+  .question {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 0;
+    margin-right: 25vw;
   }
 }
