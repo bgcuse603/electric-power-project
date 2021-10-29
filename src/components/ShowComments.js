@@ -45,7 +45,7 @@ const ShowComments = () => {
   }
 
   return (
-    <div>
+    <div className="leaveComment">
       <h3>leave a comment</h3>
       <CommentForm
         recordId={recordId.id}

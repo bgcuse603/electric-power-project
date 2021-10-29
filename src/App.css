@@ -138,7 +138,9 @@ form {
 li {
   list-style-type: none;
 }
-
+.leaveComment {
+  margin-left: 2vh;
+}
 /*About*/
 .about {
   padding-left: 5px;
