@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div>
-      <h6> © Brianna G Groden 2021 </h6>
+      <h6> © Electric Power Project 2021 </h6>
     </div>
   )
 }
