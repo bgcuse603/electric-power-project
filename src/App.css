@@ -145,7 +145,10 @@ ul.searchDisplay {
 }
 form {
   width: 350px;
-  margin-left: 25px;
+  margin-left: 12vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 li {
   list-style-type: none;
