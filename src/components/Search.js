@@ -86,6 +86,7 @@ const Search = () => {
   return (
     <div>
       <h1> Search Results for: </h1>
+      <div className="searchDiv">
       <h2>{`${searchTerm.term}`}</h2>
       <ul className="searchDisplay">
       {searchResults.map((result) => (
@@ -93,6 +94,7 @@ const Search = () => {
       ))} 
       </ul>
       <h5> Not what you were looking for? </h5>
+      </div>
       <SearchBar />
     </div>
   )

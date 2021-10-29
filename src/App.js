@@ -35,15 +35,19 @@ function App() {
 
       <main>
         <Route path='/' exact>
-          <div className="homeDescription">
-            {/* <p>The Electric Power Project (EPP) is a repository of information for the electrical industry. </p> */}
+          {/* <div className="searchBar">
+            <SearchBar />
+          </div> */}
+          <div className="content-home">
+            <Content />
           </div>
           <div className="searchBar">
             <SearchBar />
           </div>
-          <div className="content-home">
-            <Content />
-          </div>
+          <br />
+          <br />
+          <br />
+          <br />
         </Route>
 
         <Route path='/about'>

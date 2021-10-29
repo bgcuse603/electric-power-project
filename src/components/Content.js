@@ -38,7 +38,7 @@ const Content = () => {
 
   return (
     <div className="topics">
-      <h3> available topics </h3>
+      <h1> available topics </h1>
       <ul className={`${displayLinks}`}>
       {contents.map((content) => (
         <Link to={`/individual/${content.id}`} key={content.id} style={contentLinkStyle}>{content.fields.title}</Link>

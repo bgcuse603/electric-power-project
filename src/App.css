@@ -227,4 +227,15 @@ li {
   .questionH1 {
     margin-left: 25vw;
   }
+  .searchDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 40vw;
+  }
+  ul.searchDisplay {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
 }
