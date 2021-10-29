@@ -186,7 +186,7 @@ li {
 
   .react-player {
     width: 300vw;
-    height: 500vh;
+    height: 500px;
   }
   ul.topicLinksAll {
     padding-left: 15vw;
@@ -208,7 +208,7 @@ li {
   .searchBar {
     display: flex;
     justify-content: center;
-    padding: 5px;
+    padding: 15px;
     padding-left: 0px;
     padding-right: 15vw;
   }
@@ -221,5 +221,8 @@ li {
     flex-direction: column;
     padding-left: 0;
     margin-right: 25vw;
+  }
+  .questionH1 {
+    margin-left: 25vw;
   }
 }

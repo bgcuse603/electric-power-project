@@ -31,8 +31,9 @@ const QuestionForm = () => {
 
   return (
     <div className="question">
+      <div className="questionH1">
       <h1>question for EPP</h1>
-      
+      </div>
       <div className="questionSUB">
       <form onSubmit={handlePostRequest}>
           <label htmlFor="yourname"> </label>
