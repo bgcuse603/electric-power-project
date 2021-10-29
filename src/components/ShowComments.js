@@ -57,7 +57,7 @@ const ShowComments = () => {
         {recordSpecificComments.map((comment) => (
         <li key={comment.id}>
             <em>{comment.fields.author}</em> <br/>
-            <em>{comment.fields.comment}</em> <hr/>
+            <em>{comment.fields.comment}</em> <br/>
         </li>
       ))}
       </ul>
