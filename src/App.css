@@ -137,8 +137,12 @@ li {
 }
 
 /*About*/
+.about {
+  padding-left: 5px;
+}
 .disclaimer {
   font-size: 10px;
+  padding-left: 5px;
 }
 
 /* Media Query */
