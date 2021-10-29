@@ -17,6 +17,10 @@ Application will include:
 - Question Page
   - Form to submit questions/suggestions for future posts
 
+## Deployed Site
+
+https://electric-power-project.netlify.app/
+
 ## Wireframes
 
 https://whimsical.com/epp-PV4LBuXkzsgKrgVNaEcUN1
@@ -24,10 +28,6 @@ https://whimsical.com/epp-PV4LBuXkzsgKrgVNaEcUN1
 ## Component Hierarchy
 
 https://whimsical.com/epp-component-hierarchy-LNYLrwjjxN726EEz9EBWPP
-
-## Deployed Site
-
-https://electric-power-project.netlify.app/
 
 ## API and Data Sample
 
