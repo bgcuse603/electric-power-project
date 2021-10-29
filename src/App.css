@@ -6,6 +6,7 @@ font-family: 'Chakra Petch', sans-serif; */
 body {
   font-family: "Andika New Basic", sans-serif;
   font-size: 15px;
+  width: 100%;
 }
 main {
   margin-left: 10px;
@@ -154,32 +155,32 @@ li {
 .disclaimer {
   font-size: 10px;
 }
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+/* Media Query */
+@media screen and (min-device-width: 1100px) and (-webkit-min-device-pixel-ratio: 1) {
+  .logo-home {
+    height: 45vh;
+    width: 45vh;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .topics {
+    display: flex;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  .content-home {
+    display: flex;
+    justify-content: center;
+  }
+  body {
+    font-family: "Andika New Basic", sans-serif;
+    font-size: 20px;
+    width: 100%;
+  }
+  /*Content Page*/
+  .image-content {
+    width: 70%;
+  }
+
+  .react-player {
+    width: 70%;
   }
 }

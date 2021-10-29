@@ -17,7 +17,7 @@ function App() {
   const navLinkStyle = {
     textDecoration: "none",
     color: "#D1A10C",
-    fontSize: "15px",
+    fontSize: "2vh",
   };
 
   return (
@@ -31,7 +31,6 @@ function App() {
           <Link to="/about" style={navLinkStyle}>about</Link>
           <Link to="/question" style={navLinkStyle}>question</Link>
         </nav>
-       
       </header>
 
       <main>
